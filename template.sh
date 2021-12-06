@@ -27,6 +27,7 @@ function job_reboot() {
   read input
   if [ "${input,,}" = "y" ] ; then
 #    sudo reboot
+     :
   else
     echo "再起動を中断しました"
   fi

@@ -450,6 +450,6 @@ do
     "q")  job_exit ;;
     "r")  job_reboot ;;
     "p")  job_poweroff ;;
-    *)  echo "1～10、q、r、p を入力してください" ;;
+    *)  echo "1～9、q、r、p を入力してください" ;;
   esac
 done

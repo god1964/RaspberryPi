@@ -60,8 +60,13 @@ function job_1() {
     return
   fi
 
-  sudo apt update -y && sudo apt full-upgrade -y && \
-  sudo apt autoremove -y && sudo apt-get clean -y && sudo apt autoclean -y
+  set -x
+  sudo apt update -y
+  sudo apt full-upgrade -y
+  sudo apt autoremove -y
+  sudo apt-get clean -y
+  sudo apt autoclean -y
+  set +x
 
   echo "$1が終了しました"
 }

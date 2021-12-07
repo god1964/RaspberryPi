@@ -8,16 +8,16 @@
 ############################################################
 # パラメータ定義
 #
-# interface          :無線LAN="interface wlan0"、有線LAN="interface eth0"
-# ip_address         :固定IPアドレス
-# routers            :ルーターアドレス。通例 192.168.*.1 か 192.168.*.254
-# domain_name_servers:DNSサーバーの IPアドレス
+# interface          : 無線LAN="interface wlan0"、有線LAN="interface eth0"
+# ip_address         : 固定IPアドレス
+# routers            : ルーターアドレス。通例 192.168.*.1 か 192.168.*.254
+# domain_name_servers: DNSサーバーの IPアドレス
 # 
-# ssid_buff          :SSID
-# psk_buff           :パスワード
+# ssid_buff          : SSID
+# psk_buff           : パスワード
 # 
-# confirm            :確認メッセージ表示=true、確認メッセージ非表示=false
-# diff_switch        :diffコマンド引数。未指定、-c、-u 等々
+# confirm            : 確認メッセージ表示=true、確認メッセージ非表示=false
+# diff_switch        : diffコマンド引数。未指定、-c、-u 等々
 ############################################################
 # メニュー「2  : IPアドレス固定」が使用するパラメータ
 interface="interface wlan0"

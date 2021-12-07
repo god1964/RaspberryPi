@@ -11,7 +11,7 @@
 # interface          :無線LAN="interface wlan0"、有線LAN="interface eth0"
 # ip_address         :固定IPアドレス
 # routers            :ルーターアドレス。通例 192.168.*.1 か 192.168.*.254
-# domain_name_servers:ネームサーバー
+# domain_name_servers:DNSサーバーの IPアドレス
 # 
 # ssid_buff          :SSID
 # psk_buff           :パスワード

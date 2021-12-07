@@ -295,7 +295,7 @@ function job_8() {
     return
   fi
 
-  if [ ! ${!ssid_buff[@]} -eq ${!psk_buff[@]} ]; then
+  if [ ${#ssid_buff[@]} -ne ${#psk_buff[@]} ]; then
     echo "ssid_buff と psk_buff の定義数が異なります。$1を中断しました"
     return
   fi

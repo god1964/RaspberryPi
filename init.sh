@@ -341,7 +341,7 @@ function job_9() {
   for i in ${!install_buff[@]}
   do
     set -x
-    sudo apt install "${install_buff[$i]}" -y
+    sudo apt install ${install_buff[$i]} -y
     set +x
   done
 

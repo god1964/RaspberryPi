@@ -120,9 +120,6 @@ function job_3() {
   cat <<EOL | sudo tee -a $dest_file
 $add_str1
 $add_str2
-192.168.11.101:/media/pi/WD8T01  /mnt/nfs/WD8T01  nfs  _netdev,nofail,rw,defaults,nfsvers=3  0   0
-192.168.11.101:/media/pi/SG8T03  /mnt/nfs/SG8T03  nfs  _netdev,nofail,rw,defaults,nfsvers=3  0   0
-192.168.11.101:/media/pi/SG8T05  /mnt/nfs/SG8T05  nfs  _netdev,nofail,rw,defaults,nfsvers=3  0   0
 EOL
 
     # 追記内容確認

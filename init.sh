@@ -19,11 +19,13 @@
 # confirm            :確認メッセージ表示=true、確認メッセージ非表示=false
 # diff_switch        :diffコマンド引数。未指定、-c、-u 等々
 ############################################################
+# メニュー「2  : IPアドレス固定」が使用するパラメータ
 interface="interface wlan0"
 ip_address="192.168.11.***/24"
 routers="192.168.11.1"
 domain_name_servers="192.168.11.1"
 
+# メニュー「8  : 複数AP対応 WiFi設定」が使用するパラメータ
 ssid_buff[0]="***"
 ssid_buff[1]="***"
 ssid_buff[2]="***"
@@ -31,6 +33,13 @@ ssid_buff[2]="***"
 psk_buff[0]="***"
 psk_buff[1]="***"
 psk_buff[2]="***"
+
+# メニュー「9  : 各種インストール」が使用するパラメータ
+install_buff[0]="screen"
+install_buff[1]="kodi"
+install_buff[2]="wavemon"
+install_buff[3]="iperf3"
+install_buff[4]="gparted"
 
 confirm=false
 diff_switch=""
@@ -327,11 +336,12 @@ function job_9() {
     return
   fi
 
-  sudo apt install screen -y && \
-  sudo apt install kodi -y && \
-  sudo apt install wavemon -y && \
-  sudo apt install iperf3  -y && \
-  sudo apt install gparted  -y
+  for i in ${!install_buff[@]}
+  do
+    set -x
+    sudo apt install "${install_buff[$i]}" -y
+    set +x
+  done
 
   echo "$1が終了しました"
 }

@@ -302,7 +302,7 @@ function job_8() {
 
   dest_file=/etc/wpa_supplicant/wpa_supplicant.conf
   bak_file=`job_bak_file $dest_file`
-  if ! grep -q "Extender-A-6380" $dest_file ; then
+  if ! grep -q ${ssid_buff[0]} $dest_file ; then
     sudo cp $dest_file $bak_file
 
     cat <<EOL | sudo tee $dest_file

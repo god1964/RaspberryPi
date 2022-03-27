@@ -23,16 +23,6 @@ while true; do
   if [ "$?" = "0" ]; then
     _return=$(cat temp)
     ./ksid.sh `echo ${menu[$(($_return - 1))]} | awk '{print $1}'`
-
-#      id=`echo ${menu[$(($_return - 1))]} | awk '{print $1}'`
-
-#      if [ ${#id} = 11 ]; then
-#        kodi-send -a "PlayMedia(plugin://plugin.video.youtube/play/?video_id=$id)" > /dev/null
-#      else
-#        kodi-send -a "PlayMedia(plugin://plugin.video.youtube/play/?playlist_id=$id&play=1&order=default)" > /dev/null
-#      fi
-#      sleep 1
-#      kodi-send -a "Action(Select)" > /dev/null
   else
     break
   fi

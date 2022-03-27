@@ -1,4 +1,5 @@
 #/bin/bash
+
 function menu {
   # メニューカーソルの位置
   choice=0

@@ -5,7 +5,7 @@ menu=(
     "DAJYk1jOhzk Let It Go - Frozen - Alex Boyé (Africanized Tribal Cover) Ft. One Voice Children's Choir"
     "StLHSkvz3Rk 【鬼滅の刃 Demon Slayer: Kimetsu no Yaiba】和楽 紅蓮華【LiSA/紅蓮華 Gurenge】"
     "UvouZBYuijM JOKER | Don't Stop Me Now"
-    "elJc256ekw4 【BGMギターカバー】沙羅曼蛇(1986KONAMI/AC))全曲メドレー"
+    "PLvlum7YWrP-WtAH0PS6_WfoWs0XALtNJ_ グラディウスII-GRADIUS II [Guitar Cover]"
     "PL6PHQCxAqpJTA3R5hgkqVJChfIuecx2gh Cho Ren Sha 68K Original Soundtracks Complete"
 )
 
